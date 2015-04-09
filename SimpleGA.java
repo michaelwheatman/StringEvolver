@@ -3,7 +3,7 @@
  * Author: Sherri Goings
  * Last Modified: 4/10/13
  **/
-import java.util.*;
+ import java.util.*;
 
 public class SimpleGA {
     // GA parameters, you should not change those that are declared final
@@ -62,7 +62,6 @@ public class SimpleGA {
                 s += sequence[i];
             return "("+s+", "+fitness+")";
         }
-        
     }
     
     /** Set up GA with main parameters and goal string to match **/
@@ -110,12 +109,26 @@ public class SimpleGA {
     }
     
     public static void main(String[] args) {
-        if (args.length<1) {
-            System.out.println("must include population size as argument");
+	
+        if (args.length<3) {
+            System.out.println("must include population size, crossover type, and selection type as arguments");
             return;
         }
         // get population size as command line argument and create new GA
         int popSize = Integer.parseInt(args[0]);
+		
+		int crossoverType = Integer.parseInt(args[1]); //0=None, 1=1-point, 2=uniform
+		int selectionType = Integer.parseInt(args[2]); //0=Proportional, 1=Tournament
+		
+		
+		if (selectionType == 1) {
+			if (args.length<4) {
+            	System.out.println("must include tournemant size if using tournament selection");
+            	return;
+        	}
+			int tournamentSize = Integer.parseInt(args[3]);
+		}
+		
         SimpleGA SGA = new SimpleGA(popSize);
 
         // test GA by performing 40 runs with current parameters and determining
