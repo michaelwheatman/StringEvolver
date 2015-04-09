@@ -107,6 +107,26 @@ public class SimpleGA {
             System.out.println(pop[i]);
         System.out.println();
     }
+	
+	/** Proportional Selection **/
+    public void proportionalSelection() {
+		int sumFitness = 0;
+		Individual[] newPop = new Individual[popSize];
+		int[] fitnessScores = new int[popSize];
+        for (int i=0; i<popSize; i++) {
+			sumFitness+=pop[i].fitness;
+			fitnessScores[i] = sumFitness;
+		}
+       	int gap = sumFitness / popSize;
+		for (int i = 0; i < popSize; i++) {
+			int stochasticNum = gap/2 + i*gap;
+			int index = Arrays.binarySearch(fitnessScores, stochasticNum);
+			if (index <0)
+				index= -index - 1;
+			newPop[i] = pop[index];
+		}
+		pop = newPop;
+    }
     
     public static void main(String[] args) {
 	
@@ -143,6 +163,7 @@ public class SimpleGA {
             int gens = 0;
             while (gens<50000) {
                 SGA.evaluateAll();
+				SGA.proportionalSelection();
                 if (SGA.solved()) break;
 
                 /***************************
