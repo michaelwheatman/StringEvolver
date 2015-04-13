@@ -267,27 +267,19 @@ public class SimpleGA {
         	}
 			tournamentSize = Integer.parseInt(args[3]);
 			selectionName = "Tournament";
-		} else {selectionName = "Proportional";}
+		} else {
+			selectionName = "Proportional";
+		}
 		
-		if (crossoverType == 0) {crossoverName = "None";}
-		else if (crossoverType == 1) {crossoverName = "One Point";}
-		else {crossoverName = "Uniform";}
+		if (crossoverType == 0) {
+			crossoverName = "None";
+		} else if (crossoverType == 1) {
+			crossoverName = "One Point";
+		} else {
+			crossoverName = "Uniform";
+		}
 		
 		long lStartTime = new Date().getTime();
-//		System.out.println("Population Size = " + popSize);
-//		//Selection
-//		if (selectionType == 0) {
-//			System.out.println("Proportional Selection");
-//		} else if (selectionType == 1) {
-//			System.out.println("Tournament Selection, Tournament Size = " + tournamentSize);
-//		}
-//
-//		//Crossover
-//		if (crossoverType == 1) {
-//			System.out.println("One Point Crossover");
-//		} else if (crossoverType == 2) {
-//			System.out.println("Uniform Crossover");
-//		}
 		
         SimpleGA SGA = new SimpleGA(popSize);
 
@@ -323,8 +315,6 @@ public class SimpleGA {
                 gens++;
             }
             
-            // print number gens for this run, update min and max if appropriate
-//            System.out.println("gens: "+gens);
             totGens += gens;
             if (gens < minGens) minGens = gens;
             if (gens > maxGens) maxGens = gens;
