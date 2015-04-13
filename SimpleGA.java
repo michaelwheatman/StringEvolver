@@ -26,6 +26,7 @@ public class SimpleGA {
             fitness = 0;
         }
 		
+		/** constructor to create a new individual from a given sequence **/
 		public Individual(char[] sequence) {
 			sequence = sequence;
 			fitness = 0;
@@ -125,8 +126,9 @@ public class SimpleGA {
 		Individual[] newPop = new Individual[popSize];
        	float gap = (float) sumFitness / popSize;
 		int curIndex = 0;
+		float stochasticNum;
 		for (int i = 0; i < popSize; i++) {
-			float stochasticNum = gap/2 + i*gap;
+			stochasticNum = gap/2 + i*gap;
 			while (fitnessScores[curIndex] < stochasticNum){
 				curIndex++;
 			}
@@ -135,10 +137,11 @@ public class SimpleGA {
 		pop = newPop;
 	}
 	
+	/** Run tournament by shuffling population then selecting first t individuals to compete **/
 	public Individual shuffleAndGet(Individual[] population, int t) {
 		Collections.shuffle(Arrays.asList(population));
 		Individual toReturn = new Individual(population[0]);
-		for (int i = 0; i < t; i++) {
+		for (int i = 1; i < t; i++) {
 			if (population[i].fitness > toReturn.fitness) {
 				toReturn = new Individual(population[i]);
 			}
@@ -146,10 +149,29 @@ public class SimpleGA {
 		return toReturn;
 	}
 	
+	/** Run tournament by selecting t random individuals to compete **/
+	public Individual getFromTournament(Individual[] population, int t) {
+		int randInt = rgen.nextInt(popSize);
+		Individual toReturn = new Individual(population[randInt]);
+		for (int i=1; i < t; i++) {
+			randInt = rgen.nextInt(popSize);
+			if (population[randInt].fitness > toReturn.fitness) {
+				toReturn = new Individual(population[randInt]);
+			}
+		}
+		return toReturn;
+	}
+	
+	/**  Tournament Selection **/
 	public void tournamentSelection(int tournamentSize) {
 		Individual[] newPop = new Individual[popSize];
 		for (int i = 0; i < popSize; i++) {
-			newPop[i] = shuffleAndGet(pop, tournamentSize);
+			//Two methods of running the tournament
+			if (popSize < 5) {
+				newPop[i] = shuffleAndGet(pop, tournamentSize);
+			} else {
+				newPop[i] = getFromTournament(pop, tournamentSize);
+			}
 		} 
 		pop = newPop;
 	}
@@ -161,17 +183,22 @@ public class SimpleGA {
 		}
 		return (float) totalFitness/popSize;
 	}
-    
 	
+	/**  One Point Crossover **/
 	public void crossoverOne() {
 		Individual[] newPop = new Individual[popSize];
 		Collections.shuffle(Arrays.asList(pop));
+		int splitPoint;
+		Individual ind1;
+		Individual ind2;
+		Individual new1;
+		Individual new2;
 		for (int i = 0; i<popSize-1; i+=2) {
-			int splitPoint = rgen.nextInt(24) + 1;
-			Individual ind1 = pop[i];
-			Individual ind2 = pop[i+1];
-			Individual new1 = new Individual(26);
-			Individual new2 = new Individual(26);
+			splitPoint = rgen.nextInt(24) + 1;
+			ind1 = pop[i];
+			ind2 = pop[i+1];
+			new1 = new Individual(26);
+			new2 = new Individual(26);
 			for (int j = 0; j < splitPoint; j++) {
 				new1.sequence[j] = ind1.sequence[j];
 				new2.sequence[j] = ind2.sequence[j];
@@ -186,19 +213,22 @@ public class SimpleGA {
 		pop = newPop;
 	}
 	
+	/**  Uniform Crossover **/
 	public void crossoverUniform() {
 		Individual[] newPop = new Individual[popSize];
 		Collections.shuffle(Arrays.asList(pop));
+		Individual ind1;
+		Individual ind2;
+		Individual new1;
+		Individual new2;
+		int rand;
 		for (int i = 0; i<popSize-1; i+=2) {
-			Individual ind1 = pop[i];
-			Individual ind2 = pop[i+1];
-//			System.out.println("Ind1: " + Arrays.toString(ind1.sequence));
-//			System.out.println("Ind2: " + Arrays.toString(ind2.sequence));
-			Individual new1 = new Individual(26);
-			Individual new2 = new Individual(26);
+			ind1 = pop[i];
+			ind2 = pop[i+1];
+			new1 = new Individual(26);
+			new2 = new Individual(26);
 			for (int j = 0; j < 26; j++) {
-				int rand = rgen.nextInt(2);
-//				System.out.println("Random: " + rand);
+				rand = rgen.nextInt(2);
 				if (rand == 0) {
 					new2.sequence[j] = ind1.sequence[j];
 					new1.sequence[j] = ind2.sequence[j];
@@ -211,9 +241,6 @@ public class SimpleGA {
 			}
 			newPop[i] = new1;
 			newPop[i+1] = new2;
-//			System.out.println("After1: " + Arrays.toString(new1.sequence));
-//			System.out.println("After2: " + Arrays.toString(new2.sequence));
-//			System.out.println("----------------");
 		}
 		pop = newPop;
 	}
@@ -230,13 +257,37 @@ public class SimpleGA {
 		int selectionType = Integer.parseInt(args[2]); //0=Proportional, 1=Tournament
 		int tournamentSize = 0;
 		
+		String crossoverName;
+		String selectionName;
+		
 		if (selectionType == 1) {
 			if (args.length<4) {
             	System.out.println("must include tournament size if using tournament selection");
             	return;
         	}
 			tournamentSize = Integer.parseInt(args[3]);
-		}
+			selectionName = "Tournament";
+		} else {selectionName = "Proportional";}
+		
+		if (crossoverType == 0) {crossoverName = "None";}
+		else if (crossoverType == 1) {crossoverName = "One Point";}
+		else {crossoverName = "Uniform";}
+		
+		long lStartTime = new Date().getTime();
+//		System.out.println("Population Size = " + popSize);
+//		//Selection
+//		if (selectionType == 0) {
+//			System.out.println("Proportional Selection");
+//		} else if (selectionType == 1) {
+//			System.out.println("Tournament Selection, Tournament Size = " + tournamentSize);
+//		}
+//
+//		//Crossover
+//		if (crossoverType == 1) {
+//			System.out.println("One Point Crossover");
+//		} else if (crossoverType == 2) {
+//			System.out.println("Uniform Crossover");
+//		}
 		
         SimpleGA SGA = new SimpleGA(popSize);
 
@@ -278,9 +329,10 @@ public class SimpleGA {
             if (gens < minGens) minGens = gens;
             if (gens > maxGens) maxGens = gens;
         }
+		long lEndTime = new Date().getTime();
+		long difference = lEndTime - lStartTime;
+		
         // print final data
-		System.out.println("\nPopulation Size: " + popSize + ", Crossover Type: " + crossoverType + ", Selection Type: " + selectionType + ", Tournament Size: " + tournamentSize);
-        System.out.println("ave gens: "+totGens/40.0+"  range: "+minGens + ", " + maxGens);
-		System.out.println("Work: " + popSize*totGens/40.0);
+		System.out.println("Population Size: " + popSize + ", Crossover Type: " + crossoverName + ", Selection Type: " + selectionName + ", Tournament Size: " + tournamentSize + ", ave gens: "+totGens/40.0+", range: "+minGens + " to " + maxGens + ", Work: " + popSize*totGens/40.0 + ", Elapsed milliseconds: " + difference + ".");
     }
 }
