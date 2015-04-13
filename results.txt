@@ -1,0 +1,440 @@
+
+Population Size: 4, Crossover Type: 0, Selection Type: 0, Tournament Size: 0
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+
+Population Size: 20, Crossover Type: 0, Selection Type: 0, Tournament Size: 0
+ave gens: 50000.0  range: 50000, 50000
+Work: 1000000.0
+
+Population Size: 100, Crossover Type: 0, Selection Type: 0, Tournament Size: 0
+ave gens: 50000.0  range: 50000, 50000
+Work: 5000000.0
+
+Population Size: 4, Crossover Type: 0, Selection Type: 1, Tournament Size: 2
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+
+Population Size: 20, Crossover Type: 0, Selection Type: 1, Tournament Size: 2
+ave gens: 40432.025  range: 4901, 50000
+Work: 808640.5
+
+Population Size: 100, Crossover Type: 0, Selection Type: 1, Tournament Size: 2
+ave gens: 527.325  range: 261, 1395
+Work: 52732.5
+
+Population Size: 500, Crossover Type: 0, Selection Type: 1, Tournament Size: 2
+ave gens: 246.825  range: 168, 320
+Work: 123412.5
+
+Population Size: 500, Crossover Type: 0, Selection Type: 0, Tournament Size: 0
+ave gens: 50000.0  range: 50000, 50000
+Work: 2.5E7
+
+Population Size: 4, Crossover Type: 0, Selection Type: 1, Tournament Size: 3
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+
+Population Size: 20, Crossover Type: 0, Selection Type: 1, Tournament Size: 3
+ave gens: 410.4  range: 240, 813
+Work: 8208.0
+
+Population Size: 4, Crossover Type: 0, Selection Type: 1, Tournament Size: 2
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+
+Population Size: 100, Crossover Type: 0, Selection Type: 1, Tournament Size: 3
+ave gens: 157.225  range: 114, 200
+Work: 15722.5
+
+Population Size: 20, Crossover Type: 0, Selection Type: 1, Tournament Size: 2
+ave gens: 43649.9  range: 9993, 50000
+Work: 872998.0
+
+Population Size: 500, Crossover Type: 0, Selection Type: 1, Tournament Size: 3
+ave gens: 106.05  range: 82, 124
+Work: 53025.0
+
+Population Size: 20, Crossover Type: 0, Selection Type: 1, Tournament Size: 10
+ave gens: 265.1  range: 130, 458
+Work: 5302.0
+
+Population Size: 100, Crossover Type: 0, Selection Type: 1, Tournament Size: 50
+ave gens: 68.9  range: 42, 115
+Work: 6890.0
+
+Population Size: 100, Crossover Type: 0, Selection Type: 1, Tournament Size: 2
+ave gens: 482.125  range: 219, 925
+Work: 48212.5
+
+Population Size: 500, Crossover Type: 0, Selection Type: 1, Tournament Size: 250
+ave gens: 26.725  range: 22, 34
+Work: 13362.5
+
+Population Size: 4, Crossover Type: 0, Selection Type: 1, Tournament Size: 4
+ave gens: 44687.2  range: 2037, 50000
+Work: 178748.8
+
+Population Size: 20, Crossover Type: 0, Selection Type: 1, Tournament Size: 20
+ave gens: 288.875  range: 151, 598
+Work: 5777.5
+
+Population Size: 100, Crossover Type: 0, Selection Type: 1, Tournament Size: 100
+ave gens: 58.575  range: 35, 88
+Work: 5857.5
+
+Population Size: 500, Crossover Type: 0, Selection Type: 1, Tournament Size: 500
+ave gens: 24.825  range: 20, 35
+Work: 12412.5
+
+Population Size: 4, Crossover Type: 1, Selection Type: 0, Tournament Size: 0
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+
+Population Size: 20, Crossover Type: 1, Selection Type: 0, Tournament Size: 0
+ave gens: 50000.0  range: 50000, 50000
+Work: 1000000.0
+
+Population Size: 100, Crossover Type: 1, Selection Type: 0, Tournament Size: 0
+ave gens: 7250.175  range: 379, 33777
+Work: 725017.5
+
+Population Size: 500, Crossover Type: 1, Selection Type: 0, Tournament Size: 0
+ave gens: 462.175  range: 77, 2640
+Work: 231087.5
+
+Population Size: 4, Crossover Type: 1, Selection Type: 1, Tournament Size: 2
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+
+Population Size: 20, Crossover Type: 1, Selection Type: 1, Tournament Size: 2
+ave gens: 460.875  range: 247, 851
+Work: 9217.5
+
+Population Size: 100, Crossover Type: 1, Selection Type: 1, Tournament Size: 2
+ave gens: 100.45  range: 51, 208
+Work: 10045.0
+
+Population Size: 500, Crossover Type: 0, Selection Type: 1, Tournament Size: 2
+ave gens: 239.45  range: 180, 324
+Work: 119725.0
+
+Population Size: 4, Crossover Type: 0, Selection Type: 1, Tournament Size: 3
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+
+Population Size: 20, Crossover Type: 0, Selection Type: 1, Tournament Size: 3
+ave gens: 405.725  range: 185, 742
+Work: 8114.5
+
+Population Size: 100, Crossover Type: 0, Selection Type: 1, Tournament Size: 3
+ave gens: 148.95  range: 107, 215
+Work: 14895.0
+
+Population Size: 500, Crossover Type: 1, Selection Type: 1, Tournament Size: 2
+ave gens: 39.35  range: 33, 53
+Work: 19675.0
+
+Population Size: 4, Crossover Type: 1, Selection Type: 1, Tournament Size: 3
+ave gens: 45995.075  range: 7994, 50000
+Work: 183980.3
+
+Population Size: 20, Crossover Type: 1, Selection Type: 1, Tournament Size: 3
+ave gens: 293.45  range: 151, 530
+Work: 5869.0
+
+Population Size: 100, Crossover Type: 1, Selection Type: 1, Tournament Size: 3
+ave gens: 69.1  range: 39, 96
+Work: 6910.0
+
+Population Size: 500, Crossover Type: 1, Selection Type: 1, Tournament Size: 3
+ave gens: 27.15  range: 21, 37
+Work: 13575.0
+
+Population Size: 20, Crossover Type: 1, Selection Type: 1, Tournament Size: 10
+ave gens: 254.825  range: 119, 558
+Work: 5096.5
+
+Population Size: 100, Crossover Type: 1, Selection Type: 1, Tournament Size: 50
+ave gens: 56.9  range: 28, 106
+Work: 5690.0
+
+Population Size: 500, Crossover Type: 1, Selection Type: 1, Tournament Size: 250
+ave gens: 16.825  range: 13, 26
+Work: 8412.5
+
+Population Size: 4, Crossover Type: 1, Selection Type: 1, Tournament Size: 4
+ave gens: 25847.2  range: 1714, 50000
+Work: 103388.8
+
+Population Size: 20, Crossover Type: 1, Selection Type: 1, Tournament Size: 20
+ave gens: 260.725  range: 129, 530
+Work: 5214.5
+
+Population Size: 100, Crossover Type: 1, Selection Type: 1, Tournament Size: 100
+ave gens: 53.825  range: 33, 101
+Work: 5382.5
+
+Population Size: 500, Crossover Type: 0, Selection Type: 1, Tournament Size: 3
+ave gens: 107.5  range: 88, 125
+Work: 53750.0
+
+Population Size: 20, Crossover Type: 0, Selection Type: 1, Tournament Size: 10
+ave gens: 251.425  range: 160, 431
+Work: 5028.5
+
+Population Size: 100, Crossover Type: 0, Selection Type: 1, Tournament Size: 50
+ave gens: 70.2  range: 42, 117
+Work: 7020.0
+
+Population Size: 500, Crossover Type: 1, Selection Type: 1, Tournament Size: 500
+ave gens: 18.2  range: 14, 27
+Work: 9100.0
+
+Population Size: 4, Crossover Type: 2, Selection Type: 0, Tournament Size: 0
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+Population Size: 500, Crossover Type: 0, Selection Type: 1, Tournament Size: 250
+
+ave gens: 26.725  range: 21, 41
+Work: 13362.5
+
+Population Size: 4, Crossover Type: 0, Selection Type: 1, Tournament Size: 4
+ave gens: 46599.25  range: 3040, 50000
+Work: 186397.0
+
+Population Size: 20, Crossover Type: 0, Selection Type: 1, Tournament Size: 20
+ave gens: 261.05  range: 116, 653
+Work: 5221.0
+
+Population Size: 100, Crossover Type: 0, Selection Type: 1, Tournament Size: 100
+ave gens: 66.2  range: 35, 130
+Work: 6620.0
+
+Population Size: 500, Crossover Type: 0, Selection Type: 1, Tournament Size: 500
+ave gens: 25.175  range: 21, 37
+Work: 12587.5
+
+Population Size: 4, Crossover Type: 1, Selection Type: 0, Tournament Size: 0
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+
+Population Size: 20, Crossover Type: 2, Selection Type: 0, Tournament Size: 0
+ave gens: 50000.0  range: 50000, 50000
+Work: 1000000.0
+
+Population Size: 20, Crossover Type: 1, Selection Type: 0, Tournament Size: 0
+ave gens: 50000.0  range: 50000, 50000
+Work: 1000000.0
+
+Population Size: 100, Crossover Type: 2, Selection Type: 0, Tournament Size: 0
+ave gens: 1480.825  range: 160, 7115
+Work: 148082.5
+
+Population Size: 500, Crossover Type: 2, Selection Type: 0, Tournament Size: 0
+ave gens: 203.85  range: 62, 470
+Work: 101925.0
+
+Population Size: 100, Crossover Type: 1, Selection Type: 0, Tournament Size: 0
+ave gens: 5776.175  range: 330, 26884
+Work: 577617.5
+
+Population Size: 4, Crossover Type: 2, Selection Type: 1, Tournament Size: 2
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+
+Population Size: 20, Crossover Type: 2, Selection Type: 1, Tournament Size: 2
+ave gens: 376.875  range: 142, 592
+Work: 7537.5
+
+Population Size: 500, Crossover Type: 1, Selection Type: 0, Tournament Size: 0
+ave gens: 463.525  range: 85, 1359
+Work: 231762.5
+
+Population Size: 100, Crossover Type: 2, Selection Type: 1, Tournament Size: 2
+ave gens: 70.9  range: 34, 121
+Work: 7090.0
+
+Population Size: 4, Crossover Type: 1, Selection Type: 1, Tournament Size: 2
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+
+Population Size: 20, Crossover Type: 1, Selection Type: 1, Tournament Size: 2
+ave gens: 415.475  range: 229, 948
+Work: 8309.5
+
+Population Size: 100, Crossover Type: 1, Selection Type: 1, Tournament Size: 2
+ave gens: 99.35  range: 61, 162
+Work: 9935.0
+
+Population Size: 500, Crossover Type: 2, Selection Type: 1, Tournament Size: 2
+ave gens: 24.8  range: 22, 27
+Work: 12400.0
+
+Population Size: 4, Crossover Type: 2, Selection Type: 1, Tournament Size: 3
+ave gens: 31870.15  range: 2213, 50000
+Work: 127480.6
+
+Population Size: 20, Crossover Type: 2, Selection Type: 1, Tournament Size: 3
+ave gens: 271.175  range: 148, 480
+Work: 5423.5
+
+Population Size: 100, Crossover Type: 2, Selection Type: 1, Tournament Size: 3
+ave gens: 47.575  range: 20, 86
+Work: 4757.5
+
+Population Size: 500, Crossover Type: 1, Selection Type: 1, Tournament Size: 2
+ave gens: 38.45  range: 31, 47
+Work: 19225.0
+
+Population Size: 500, Crossover Type: 2, Selection Type: 1, Tournament Size: 3
+ave gens: 16.475  range: 15, 18
+Work: 8237.5
+
+Population Size: 20, Crossover Type: 2, Selection Type: 1, Tournament Size: 10
+ave gens: 256.75  range: 116, 616
+Work: 5135.0
+
+Population Size: 100, Crossover Type: 2, Selection Type: 1, Tournament Size: 50
+ave gens: 47.7  range: 21, 89
+Work: 4770.0
+
+Population Size: 4, Crossover Type: 1, Selection Type: 1, Tournament Size: 3
+ave gens: 48673.275  range: 3224, 50000
+Work: 194693.1
+
+Population Size: 20, Crossover Type: 1, Selection Type: 1, Tournament Size: 3
+ave gens: 304.9  range: 173, 568
+Work: 6098.0
+
+Population Size: 100, Crossover Type: 1, Selection Type: 1, Tournament Size: 3
+ave gens: 70.225  range: 44, 106
+Work: 7022.5
+
+Population Size: 500, Crossover Type: 2, Selection Type: 1, Tournament Size: 250
+ave gens: 14.475  range: 10, 20
+Work: 7237.5
+
+Population Size: 4, Crossover Type: 2, Selection Type: 1, Tournament Size: 4
+ave gens: 12860.575  range: 702, 50000
+Work: 51442.3
+
+Population Size: 20, Crossover Type: 2, Selection Type: 1, Tournament Size: 20
+ave gens: 277.525  range: 99, 597
+Work: 5550.5
+
+Population Size: 100, Crossover Type: 2, Selection Type: 1, Tournament Size: 100
+ave gens: 55.9  range: 25, 113
+Work: 5590.0
+
+Population Size: 500, Crossover Type: 1, Selection Type: 1, Tournament Size: 3
+ave gens: 26.8  range: 24, 37
+Work: 13400.0
+
+Population Size: 20, Crossover Type: 1, Selection Type: 1, Tournament Size: 10
+ave gens: 253.4  range: 125, 476
+Work: 5068.0
+
+Population Size: 100, Crossover Type: 1, Selection Type: 1, Tournament Size: 50
+ave gens: 49.95  range: 26, 94
+Work: 4995.0
+
+Population Size: 500, Crossover Type: 2, Selection Type: 1, Tournament Size: 500
+ave gens: 17.175  range: 13, 32
+Work: 8587.5
+
+Population Size: 500, Crossover Type: 1, Selection Type: 1, Tournament Size: 250
+ave gens: 17.125  range: 13, 23
+Work: 8562.5
+
+Population Size: 4, Crossover Type: 1, Selection Type: 1, Tournament Size: 4
+ave gens: 22501.5  range: 1104, 50000
+Work: 90006.0
+
+Population Size: 20, Crossover Type: 1, Selection Type: 1, Tournament Size: 20
+ave gens: 242.275  range: 120, 462
+Work: 4845.5
+
+Population Size: 100, Crossover Type: 1, Selection Type: 1, Tournament Size: 100
+ave gens: 53.025  range: 25, 134
+Work: 5302.5
+
+Population Size: 500, Crossover Type: 1, Selection Type: 1, Tournament Size: 500
+ave gens: 18.3  range: 15, 30
+Work: 9150.0
+
+Population Size: 4, Crossover Type: 2, Selection Type: 0, Tournament Size: 0
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+
+Population Size: 20, Crossover Type: 2, Selection Type: 0, Tournament Size: 0
+ave gens: 50000.0  range: 50000, 50000
+Work: 1000000.0
+
+Population Size: 100, Crossover Type: 2, Selection Type: 0, Tournament Size: 0
+ave gens: 1270.5  range: 182, 5676
+Work: 127050.0
+
+Population Size: 500, Crossover Type: 2, Selection Type: 0, Tournament Size: 0
+ave gens: 241.8  range: 75, 786
+Work: 120900.0
+
+Population Size: 4, Crossover Type: 2, Selection Type: 1, Tournament Size: 2
+ave gens: 50000.0  range: 50000, 50000
+Work: 200000.0
+
+Population Size: 20, Crossover Type: 2, Selection Type: 1, Tournament Size: 2
+ave gens: 371.0  range: 171, 605
+Work: 7420.0
+
+Population Size: 100, Crossover Type: 2, Selection Type: 1, Tournament Size: 2
+ave gens: 71.975  range: 31, 171
+Work: 7197.5
+
+Population Size: 500, Crossover Type: 2, Selection Type: 1, Tournament Size: 2
+ave gens: 25.05  range: 22, 28
+Work: 12525.0
+
+Population Size: 4, Crossover Type: 2, Selection Type: 1, Tournament Size: 3
+ave gens: 34809.175  range: 1469, 50000
+Work: 139236.7
+
+Population Size: 20, Crossover Type: 2, Selection Type: 1, Tournament Size: 3
+ave gens: 278.25  range: 124, 549
+Work: 5565.0
+
+Population Size: 100, Crossover Type: 2, Selection Type: 1, Tournament Size: 3
+ave gens: 55.375  range: 28, 143
+Work: 5537.5
+
+Population Size: 500, Crossover Type: 2, Selection Type: 1, Tournament Size: 3
+ave gens: 16.525  range: 13, 21
+Work: 8262.5
+
+Population Size: 20, Crossover Type: 2, Selection Type: 1, Tournament Size: 10
+ave gens: 256.175  range: 132, 489
+Work: 5123.5
+
+Population Size: 100, Crossover Type: 2, Selection Type: 1, Tournament Size: 50
+ave gens: 56.15  range: 22, 138
+Work: 5615.0
+
+Population Size: 500, Crossover Type: 2, Selection Type: 1, Tournament Size: 250
+ave gens: 14.575  range: 9, 22
+Work: 7287.5
+
+Population Size: 4, Crossover Type: 2, Selection Type: 1, Tournament Size: 4
+ave gens: 12976.3  range: 974, 50000
+Work: 51905.2
+
+Population Size: 20, Crossover Type: 2, Selection Type: 1, Tournament Size: 20
+ave gens: 238.975  range: 121, 502
+Work: 4779.5
+
+Population Size: 100, Crossover Type: 2, Selection Type: 1, Tournament Size: 100
+ave gens: 52.05  range: 26, 99
+Work: 5205.0
+
+Population Size: 500, Crossover Type: 2, Selection Type: 1, Tournament Size: 500
+ave gens: 17.2  range: 13, 28
+Work: 8600.0
